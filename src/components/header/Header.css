@@ -1,0 +1,14 @@
+.portfolio__header {
+  width: 100%;
+  height: var(--headerHeight);
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.5em;
+  color: var(--babyBlue);
+}
+
+.header__link {
+  padding: 0.5em;
+  line-height: 1.5;
+  font-size: calc(10px + 2vmin);
+}

@@ -1,0 +1,29 @@
+.portfolio__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - var(--headerHeight));
+}
+
+/* heading size */
+.about__small-heading {
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  margin: 0;
+}
+.about__large-heading {
+  font-size: clamp(3rem, 8vw, 8rem);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.portfolio__about > h1 {
+  color: var(--babyBlue);
+}
+
+.portfolio__about > h2 {
+  color: var(--blueGreen);
+}
+
+.portfolio__about > h3 {
+  color: var(--blueGrotto);
+}
