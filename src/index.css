@@ -8,11 +8,23 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 2rem;
   font-family: 'Poppins', 'Segoe UI', Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--navyBlue);
+  background: var(--navy-blue);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-grotto);
+  border: 3px solid var(--navy-blue);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  border: 2px solid var(--navy-blue);
 }
 
 code {
