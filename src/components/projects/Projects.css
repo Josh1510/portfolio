@@ -1,0 +1,21 @@
+.portfolio__projects {
+  height: 100vh;
+}
+
+.projects__header {
+  /* width: auto; */
+  color: var(--baby-blue);
+  font-size: clamp(3rem, 8vw, 4rem);
+}
+
+h4::after {
+  background-color: var(--baby-blue);
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: calc(75vw - 200px);
+  left: 0.5em;
+  margin-right: -50%;
+}
