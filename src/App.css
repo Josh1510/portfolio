@@ -1,8 +1,9 @@
 :root {
-  --navy-blue: #05445e;
-  --blue-grotto: #189ab4;
-  --blue-green: #75e6da;
-  --baby-blue: #d4f1f4;
+  --navy-blue: hsl(198, 90%, 19%);
+  /* actual blue grotto is 40% brightness, changed for readability */
+  --blue-grotto: hsl(190, 76%, 50%);
+  --blue-green: hsl(174, 69%, 68%);
+  --baby-blue: hsl(186, 59%, 89%);
 
   --header-height: 75px;
 }
