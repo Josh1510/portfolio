@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh);
-  margin: calc(-1 * var(--headerHeight)) 2rem 0;
+  height: 100vh;
+  margin: calc(-1 * var(--header-height)) 0 0;
   cursor: default;
   user-select: none;
 }
@@ -20,15 +20,15 @@
 }
 
 .portfolio__about > h1 {
-  color: var(--babyBlue);
+  color: var(--baby-blue);
 }
 
 .portfolio__about > h2 {
-  color: var(--blueGreen);
+  color: var(--blue-green);
 }
 
 .portfolio__about > h3 {
-  color: var(--blueGrotto);
+  color: var(--blue-grotto);
   margin-bottom: -10px;
 }
 .portfolio__about > p {

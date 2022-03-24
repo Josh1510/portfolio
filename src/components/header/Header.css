@@ -1,10 +1,10 @@
 .portfolio__header {
   width: 100%;
-  height: var(--headerHeight);
+  height: var(--header-height);
   display: flex;
   justify-content: flex-end;
   margin-right: 0.5em;
-  color: var(--babyBlue);
+  color: var(--baby-blue);
 }
 
 .header__link {
@@ -14,12 +14,12 @@
   font-size: calc(10px + 2vmin);
   cursor: pointer;
   user-select: none;
-  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blueGreen);
+  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blue-green);
 
   transition: margin-top 80ms ease-out 80ms;
 }
 
 .header__link:hover {
-  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blueGreen);
+  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blue-green);
   margin-top: 0.25em;
 }
