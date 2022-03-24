@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - var(--headerHeight));
+  height: calc(100vh);
+  margin: calc(-1 * var(--headerHeight)) 2rem 0;
+  cursor: default;
+  user-select: none;
 }
 
 /* heading size */
@@ -26,4 +29,11 @@
 
 .portfolio__about > h3 {
   color: var(--blueGrotto);
+  margin-bottom: -10px;
+}
+.portfolio__about > p {
+  font-size: clamp(0.75rem, 5vw, 1.5rem);
+  width: 50vw;
+  margin-block-end: 0;
+  color: hsl(190, 76%, 33%);
 }
