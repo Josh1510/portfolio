@@ -8,7 +8,18 @@
 }
 
 .header__link {
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0 0.5em;
+  margin: 0 0.5em;
   line-height: 1.5;
   font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  user-select: none;
+  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blueGreen);
+
+  transition: margin-top 80ms ease-out 80ms;
+}
+
+.header__link:hover {
+  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blueGreen);
+  margin-top: 0.25em;
 }
