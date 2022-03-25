@@ -20,6 +20,5 @@
 }
 
 .header__link:hover {
-  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blue-green);
   margin-top: 0.25em;
 }
