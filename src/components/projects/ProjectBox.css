@@ -1,90 +1,54 @@
 .project__box-container {
-  max-width: 530px;
-  font-size: clamp(1.25rem, 5vw, 2.5rem);
   color: var(--blue-green);
-  padding-right: -4px;
+  max-width: 800px;
+  max-height: calc(300px + var(--header-height));
+  display: flex;
+  flex-direction: column;
 }
 
 h5 {
-  padding-left: 2rem;
+  font-size: clamp(1.25rem, 5vw, 2.5rem);
   margin-block-start: 0px;
   margin-block-end: 0px;
+}
+
+.project__details-container {
+  display: flex;
+  flex-direction: row;
 }
 
 img {
   margin: 0;
 }
 
-.box__image-container {
-  position: relative;
-  max-width: 530px;
-  min-width: 320px;
-  background-color: black;
-}
-
-.box__image-container:after {
-  content: '';
-  display: block;
-  padding-bottom: 56.25%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
-}
-
-.box__image-container img {
-  position: absolute; /* Take your picture out of the flow */
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; /* Make the picture taking the size of it's parent */
-  width: 100%; /* This if for the object-fit */
-  height: 100%; /* This if for the object-fit */
-  object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
-  object-position: center;
-  transition: opacity 300ms ease-in;
-}
-
-.box__image-container:hover img {
-  opacity: 0.15;
-}
-
 .box__description-container {
-  height: 100%;
+  font-size: clamp(1rem, 5vw, 1.75rem);
+  height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: var(--blue-grotto);
-  opacity: 1;
-
   line-height: 1.25;
-  position: absolute;
-  transition: opacity 500ms ease-in;
-}
-.box__image-container:hover .box__description-container {
-  opacity: 1;
+  padding: 1rem;
 }
 
-.description__data {
-  padding: 1rem;
+.description__data-container {
+  flex-grow: 0;
 }
 
 .description__button-container {
-  height: var(--header-height);
-  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blue-green);
-  margin-bottom: 2rem;
-  width: 50%;
-}
-
-.description__button {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
-  padding: 1rem;
-  color: var(--baby-blue);
-  padding: 0.5em 0.5em 0 0.5em;
-  margin: 0 0.5em;
-  font-size: clamp(1.25rem, 5vw, 2.5rem);
-  cursor: pointer;
-  user-select: none;
-  transition: margin-top 80ms ease-out 80ms;
+  align-items: center;
 }
 
-.description__button:hover {
-  margin-top: 0.25em;
+/* .description__button-container {
+  display: flex; 
+   justify-content: center;
+  align-items: center;
+} */
+
+.description__button {
+  font-size: clamp(1.25rem, 5vw, 2.5rem);
+  color: var(--baby-blue);
 }
