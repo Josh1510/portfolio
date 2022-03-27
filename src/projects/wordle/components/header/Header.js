@@ -8,10 +8,10 @@ export default function Header() {
       <div className="header__title">Wordle Clone</div>
       <div className="gitHub-link__container">
         <a href="https://github.com/Josh1510/wordle-clone">
-          <div className="gitHub-link__content">
+          {/* <div className="gitHub-link__content">
             <div>GitHub Link</div>
             <img src={gitHubLogo} alt="GitHub Link" />
-          </div>
+          </div> */}
         </a>
       </div>
     </div>

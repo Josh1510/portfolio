@@ -19,3 +19,9 @@ h4::after {
   left: 0.5em;
   margin-right: -50%;
 }
+
+.projects__box-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}

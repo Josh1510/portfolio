@@ -7,11 +7,11 @@ export default function Projects() {
   return (
     <section id="projects" className="portfolio__projects">
       <h4 className="projects__header">Projects</h4>
-
-      {projectsData.map((data, key) => {
-        return <ProjectBox data={data} />;
-      })}
-
+      <div className="projects__box-container">
+        {projectsData.map((data, key) => {
+          return <ProjectBox data={data} key={key} />;
+        })}
+      </div>
       <div>Projects</div>
     </section>
   );

@@ -1,9 +1,7 @@
 .project__box-container {
   color: var(--blue-green);
-  max-width: 800px;
-  max-height: calc(300px + var(--header-height));
-  display: flex;
-  flex-direction: column;
+  max-width: 750px;
+  min-width: 650px;
 }
 
 h5 {
@@ -51,4 +49,14 @@ img {
 .description__button {
   font-size: clamp(1.25rem, 5vw, 2.5rem);
   color: var(--baby-blue);
+  cursor: pointer;
+  user-select: none;
+  border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blue-green);
+
+  margin: 0 0.5em;
+  transition: margin-top 80ms ease-out 80ms;
+}
+
+.description__button:hover {
+  margin-top: 0.25em;
 }
