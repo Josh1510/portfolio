@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectModal.css';
 import WordleApp from '../../../projects/wordle/WordleApp';
 
-export default function ProjectModal({ project, setModalVisible }) {
+export default function ProjectModal({ project, setModalVisible, demo, video }) {
   console.log(project);
 
   let ProjectToDemo;
@@ -10,15 +10,13 @@ export default function ProjectModal({ project, setModalVisible }) {
   if (project === 'WordleApp') {
     ProjectToDemo = WordleApp;
   }
+  //   if (project === 'Shop') {
+  //     ProjectToDemo = <source src={ShopVideo} type="video/mp4" />;
+  //   }
 
   return (
     <>
-      <div
-        className="modal__container"
-        onClick={() => {
-          setModalVisible(false);
-        }}
-      >
+      <div className="modal__container">
         <div
           className="modal__close"
           onClick={() => {
@@ -44,7 +42,15 @@ export default function ProjectModal({ project, setModalVisible }) {
           </svg>{' '}
           Close
         </div>
-        <div className="modal__project-container">{<ProjectToDemo />}</div>
+        {demo ? (
+          <div className="modal__project-container">{<ProjectToDemo />}</div>
+        ) : (
+          <div className="modal__project-container">
+            <video loop autoPlay>
+              <source src={video} type="video/mp4" />
+            </video>
+          </div>
+        )}
       </div>
     </>
   );

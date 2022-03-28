@@ -8,15 +8,6 @@ export default function ProjectBox({ data }) {
   const [isModalVisible, setModalVisible] = useState(false);
   const [projectToPass, setProjectTopass] = useState('');
 
-  //  import all images contained in folder
-  function importAll(r) {
-    return r.keys().map(r);
-  }
-
-  const images = importAll(require.context('../../projects/images/', false, /\.(png|jpe?g|svg)$/));
-
-  console.log(isModalVisible);
-
   const handleClick = () => {
     setModalVisible(true);
     setProjectTopass(data.project);
@@ -27,15 +18,21 @@ export default function ProjectBox({ data }) {
       <div>
         <h5>{data.title}</h5>
         <div className="project__details-container">
-          <img src={images[data.image]} alt={`screenshot of ${data.title}`}></img>
+          <img src={data.image} alt={`screenshot of ${data.title}`}></img>
           <div className="box__description-container">
             <div className="description__data-container">
               <div className="description__data">{data.description}</div>
             </div>
             <div className="description__button-container">
-              <div className="description__button" onClick={handleClick}>
-                DEMO
-              </div>
+              {data.demo ? (
+                <div className="description__button" onClick={handleClick}>
+                  DEMO
+                </div>
+              ) : (
+                <div className="description__button" onClick={handleClick}>
+                  VIDEO
+                </div>
+              )}
               <a href={`${data.github}`} target="_blank" rel="noreferrer">
                 <div className="gitHub-link__content description__button">
                   <img src={gitHubLogo} alt="GitHub Link" />
@@ -46,7 +43,7 @@ export default function ProjectBox({ data }) {
           </div>
         </div>
       </div>
-      {isModalVisible && <ProjectModal project={projectToPass} setModalVisible={setModalVisible} />}
+      {isModalVisible && <ProjectModal project={projectToPass} setModalVisible={setModalVisible} demo={data.demo} video={data.video} />}
     </div>
   );
 }
