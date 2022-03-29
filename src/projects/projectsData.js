@@ -27,6 +27,16 @@ const projectData = [
     github: 'https://github.com/Josh1510/restaurant-react',
     project: 'Restaurant',
   },
+  {
+    title: 'Library',
+    description:
+      'Built with React and React Router, queries the Google Books API, login is handled by Firebase authentication, data is stored on a Firebase Real Time Database.',
+    image: './Images/libraryimg.png',
+    video: './Videos/library_video.mp4',
+    demo: false,
+    github: 'https://github.com/Josh1510/library',
+    project: 'Library',
+  },
 ];
 
 export default projectData;
