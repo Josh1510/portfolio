@@ -34,4 +34,25 @@
   background: black;
   opacity: 1;
   width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  width: inherit;
+  max-width: 1400px;
+  height: inherit;
+}
+
+.modal__video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .modal__project-container {
+    width: 100%;
+  }
 }
