@@ -46,9 +46,11 @@ export default function ProjectModal({ project, setModalVisible, demo, video }) 
           <div className="modal__project-container">{<ProjectToDemo />}</div>
         ) : (
           <div className="modal__project-container">
-            <video loop autoPlay>
-              <source src={video} type="video/mp4" />
-            </video>
+            <div className="modal__video-container">
+              <video loop autoPlay>
+                <source src={video} type="video/mp4" />
+              </video>
+            </div>
           </div>
         )}
       </div>
