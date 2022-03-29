@@ -12,7 +12,6 @@ export default function Projects() {
           return <ProjectBox data={data} key={key} />;
         })}
       </div>
-      <div>Projects</div>
     </section>
   );
 }
