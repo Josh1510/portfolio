@@ -4,6 +4,7 @@ import WordleApp from './projects/wordle/WordleApp';
 import Header from './components/header/Header';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
       <header className="App-header">
         <Header />
         <About />
-        <Projects />
-        {/* <WordleApp /> */}
       </header>
+      <Projects />
+      <Contact />
     </div>
   );
 }
