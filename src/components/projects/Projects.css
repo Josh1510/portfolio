@@ -3,9 +3,9 @@
 }
 
 .projects__header {
-  /* width: auto; */
   color: var(--baby-blue);
   font-size: clamp(3rem, 8vw, 4rem);
+  margin: 0 0 2rem 0;
 }
 
 h4::after {
@@ -22,6 +22,7 @@ h4::after {
 
 .projects__box-container {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: wrap;
+  padding-bottom: 5rem;
 }
