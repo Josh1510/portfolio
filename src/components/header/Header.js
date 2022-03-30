@@ -7,7 +7,9 @@ export default function Header() {
       <div className="header__link">
         <a href="/#projects">Projects</a>
       </div>
-      <div className="header__link">Say Hello</div>
+      <div className="header__link">
+        <a href="/#contact">Say Hello</a>
+      </div>
     </div>
   );
 }
