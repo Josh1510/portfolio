@@ -15,10 +15,12 @@ export default function Contact() {
         </div>
         <div className="contact__button-container">
           <div className="contact__button">
-            <a href="mailto:joshmoon1510+portfolio@gmail.com">Email</a>
+            <a href="mailto:joshmoon1510@gmail.com">Email</a>
           </div>
           <div className="contact__button">
-            <a href="https://www.linkedin.com/in/joshua-moon-770324106/">LinkedIn</a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/joshua-moon-770324106/">
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>

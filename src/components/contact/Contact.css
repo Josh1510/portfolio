@@ -1,11 +1,11 @@
 .contact {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .contact__header {
-  /* width: auto; */
   color: var(--baby-blue);
   font-size: clamp(3rem, 8vw, 4rem);
+  margin: 0 0 2rem 0;
 }
 
 h4::after {
