@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ProjectModal.css';
 import WordleApp from '../../../projects/wordle/WordleApp';
 
 export default function ProjectModal({ project, setModalVisible, demo, video }) {
-  console.log(project);
+  const [loading, setLoading] = useState(true);
 
   let ProjectToDemo;
 
@@ -47,7 +47,7 @@ export default function ProjectModal({ project, setModalVisible, demo, video }) 
         ) : (
           <div className="modal__project-container">
             <div className="modal__video-container">
-              <video loop autoPlay>
+              <video loop autoPlay controls>
                 <source src={video} type="video/mp4" />
               </video>
             </div>
