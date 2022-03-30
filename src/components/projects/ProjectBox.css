@@ -24,20 +24,22 @@ img {
   height: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: var(--blue-grotto);
   line-height: 1.25;
   padding: 1rem;
 }
 
 .description__data-container {
-  flex-grow: 0;
+  flex-grow: 1;
 }
 
 .description__button-container {
-  flex-grow: 1;
+  flex-grow: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: var(--header-height);
 }
 
 /* .description__button-container {
