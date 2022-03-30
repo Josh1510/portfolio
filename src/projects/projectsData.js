@@ -11,10 +11,10 @@ const projectData = [
     title: 'Shop and cart',
     description:
       'A shop front and cart. The Shopfront built with react and styled components, back end managed by Express with a PostgreSQL database.',
-    image: './Images/shopimg.png',
+    image: './Images/shopimg.PNG',
     video: './Videos/shop_video.mp4',
     demo: false,
-    github: 'https://github.com/Josh1510/shop',
+    github: 'https://github.com/Josh1510/shop-postgresql',
     project: 'Shop',
   },
   {
@@ -24,17 +24,17 @@ const projectData = [
     image: './Images/restaurantimg.png',
     video: './Videos/restaurant_video.mp4',
     demo: false,
-    github: 'https://github.com/Josh1510/restaurant-react',
+    github: 'https://github.com/Josh1510/restaurant-one-page',
     project: 'Restaurant',
   },
   {
     title: 'Library',
     description:
-      'Built with React and React Router, queries the Google Books API, login is handled by Firebase authentication, data is stored on a Firebase Real Time Database.',
-    image: './Images/libraryimg.png',
+      'Built with React and React Router, allows user to query the Google Books API and build a list of their books. Authentication handled by Firebase authentication, data stored in Firebase Real Time Database.',
+    image: './Images/libraryimg.PNG',
     video: './Videos/library_video.mp4',
     demo: false,
-    github: 'https://github.com/Josh1510/library',
+    github: 'https://github.com/Josh1510/library-react-firebase',
     project: 'Library',
   },
 ];
