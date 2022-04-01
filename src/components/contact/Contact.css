@@ -53,3 +53,9 @@ h4::after {
 .contact__button:hover {
   margin-top: 0.25em;
 }
+
+@media only screen and (max-width: 450px) {
+  .contact__p-container > p {
+    width: 80vw;
+  }
+}

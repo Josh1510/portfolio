@@ -9,9 +9,15 @@ h5 {
   margin-block-end: 0px;
 }
 
+.projects__details-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .project__details-container {
   display: flex;
   flex-direction: row;
+  /* flex-wrap: wrap; */
 }
 
 img {
@@ -59,4 +65,22 @@ img {
   border-bottom: clamp(0.2rem, 5vw, 0.3rem) solid var(--blue-green);
 
   margin: 0 0.5em;
+}
+
+@media only screen and (max-width: 450px) {
+  .project__details-container {
+    flex-wrap: wrap;
+  }
+  .box__description-container {
+    height: auto;
+    padding-left: 0px;
+  }
+
+  .description__data-container {
+    padding: 16px 0px;
+  }
+
+  .description__button-container > div:first-child {
+    margin-left: 0px;
+  }
 }

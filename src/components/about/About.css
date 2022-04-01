@@ -41,7 +41,7 @@
   color: var(--blue-grotto);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .portfolio__about > p {
     width: 80vw;
   }
