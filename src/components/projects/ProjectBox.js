@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ProjectModal from './modal/ProjectModal';
 import './ProjectBox.css';
-import WordleApp from '../../projects/wordle/WordleApp';
 import gitHubLogo from '../../GitHub-Mark-Light-32px.png';
 
 export default function ProjectBox({ data }) {
@@ -26,17 +25,17 @@ export default function ProjectBox({ data }) {
             <div className="description__button-container">
               {data.demo ? (
                 <div className="description__button" onClick={handleClick}>
-                  DEMO
+                  Demo
                 </div>
               ) : (
                 <div className="description__button" onClick={handleClick}>
-                  VIDEO
+                  Video
                 </div>
               )}
               <a href={`${data.github}`} target="_blank" rel="noreferrer">
                 <div className="gitHub-link__content description__button">
                   <img src={gitHubLogo} alt="GitHub Link" />
-                  <div Style={'padding-left:7px;'}>GitHub Link</div>
+                  <div Style={'padding-left:7px;'}>GitHub</div>
                 </div>
               </a>
             </div>
